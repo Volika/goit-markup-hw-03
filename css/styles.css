@@ -53,6 +53,10 @@ a {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
 /* --- LOGO --------------- */
 .logo {
   font-family: Raleway, sans-serif;
@@ -61,6 +65,7 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-right: 93px;
 }
 .logo-sp-dark {
   font-family: Raleway, sans-serif;
@@ -83,12 +88,20 @@ a {
 .header-list,
 .header-connect {
   font-weight: 500;
-  /* font-size: 14px; */
-  /* line-height: calc(16 / 14); */
   letter-spacing: 0.02em;
+  display: flex;
+}
+.header-item + .header-item {
+  margin-left: 50px;
+}
+.header-connect {
+  margin-left: auto;
 }
 .header-link {
   color: var(--title-text-color);
+}
+.header-connect-item + .header-connect-item {
+  margin-left: 50px;
 }
 .header-link:hover,
 .header-link:focus {
