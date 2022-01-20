@@ -18,6 +18,13 @@ a {
 .list {
   list-style: none;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -42,7 +49,10 @@ a {
   color: var(--title-text-color);
 }
 /* ---Header--------------- */
-
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 /* --- LOGO --------------- */
 .logo {
   font-family: Raleway, sans-serif;
@@ -56,9 +66,7 @@ a {
   font-family: Raleway, sans-serif;
   color: #000000;
 }
-.logo:hover .logo-sp-dark {
-  color: var(--accent-color);
-}
+.logo:hover .logo-sp-dark,
 .logo:focus .logo-sp-dark {
   color: var(--accent-color);
 }
@@ -66,9 +74,7 @@ a {
   font-family: Raleway, sans-serif;
   color: #ffffff;
 }
-.logo:hover .logo-sp-light {
-  color: var(--accent-color);
-}
+.logo:hover .logo-sp-light,
 .logo:focus .logo-sp-light {
   color: var(--accent-color);
 }
@@ -100,8 +106,10 @@ a {
 }
 
 /* --- hero ------------------ */
-.hero-page {
+.hero {
   background-color: var(--dark-backg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -111,6 +119,7 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 .hero-btn {
   font-family: inherit;
@@ -126,13 +135,18 @@ a {
   background-color: var(--accent-color);
 }
 /* --- advantage ----------- */
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantage-list {
+}
 .advantage-item-title {
   font-weight: 700;
-  /* font-size: 14px; */
-  /* line-height: 16px; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 .advantage-item-text {
   font-size: 14px;
@@ -141,12 +155,21 @@ a {
   /* color: var(--prim-text-color); */
 }
 /* --- development ------------------------- */
-
-/* --- team -------------------------- */
-.team-page {
-  background-color: var(--light-backg-color);
+.development {
+  padding-bottom: 94px;
 }
-
+.development-title {
+  margin-bottom: 50px;
+}
+/* --- team -------------------------- */
+.team {
+  background-color: var(--light-backg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-title {
+  margin-bottom: 50px;
+}
 .team-item-size {
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -162,12 +185,18 @@ a {
 }
 .footer {
   background-color: var(--dark-backg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-address {
+  margin-top: 20px;
 }
 .footer-address-item {
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 .footer-link-address {
   color: #ffffff;
