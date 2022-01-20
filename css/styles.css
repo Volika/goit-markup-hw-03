@@ -31,6 +31,7 @@ button {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 
 a {
@@ -68,6 +69,10 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* ---Header--------------- */
 .header {
@@ -185,8 +190,8 @@ a {
 }
 /* --- advantage ----------- */
 .advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 .advantage-list {
   display: flex;
@@ -227,8 +232,8 @@ a {
 /* --- team -------------------------- */
 .team {
   background-color: var(--light-backg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 .team-title {
   margin-bottom: 50px;
@@ -289,11 +294,18 @@ a {
 /* --- portfolio-page ---------------- */
 .portfolio {
   background-color: var(--prim-backg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 .portfolio-list-container {
   margin-bottom: 34px;
+}
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-item + .portfolio-item {
+  margin-left: 8px;
 }
 .portfolio-btn {
   font-family: inherit;
@@ -313,6 +325,18 @@ a {
 .portfolio-btn:hover {
   color: #ffffff;
   background-color: var(--accent-color);
+}
+/* project */
+.project-list {
+  display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  flex-wrap: wrap;
+}
+.project-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 .project-item-title {
   font-weight: 700;
