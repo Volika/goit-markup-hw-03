@@ -180,13 +180,12 @@ a {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
-  border-color: transparent;
+  border: transparent;
   border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  /* border-color: var(--accent-color); */
-  border-radius: 0px;
+  background-color: #188ce8;
 }
 /* --- advantage ----------- */
 .advantage {
