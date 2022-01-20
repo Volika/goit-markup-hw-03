@@ -12,6 +12,27 @@ body {
   color: var(--prim-text-color);
   background-color: var(--prim-backg-color);
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
@@ -127,11 +148,14 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  max-width: 696px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn {
   font-family: inherit;
@@ -139,12 +163,25 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  padding: 10 32;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
+  border-color: transparent;
+  border-radius: 4px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  /* border-color: var(--accent-color); */
+  border-radius: 0px;
 }
 /* --- advantage ----------- */
 .advantage {
@@ -152,6 +189,11 @@ a {
   padding-bottom: 94px;
 }
 .advantage-list {
+  display: flex;
+  justify-content: space-between;
+}
+.advantage-item + .advantage-item {
+  margin-left: 30px;
 }
 .advantage-item-title {
   font-weight: 700;
@@ -164,14 +206,23 @@ a {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  width: 270px;
   /* color: var(--prim-text-color); */
 }
 /* --- development ------------------------- */
 .development {
   padding-bottom: 94px;
 }
+.development-list {
+  display: flex;
+  margin-left: -30px;
+}
 .development-title {
   margin-bottom: 50px;
+}
+.development-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
 }
 /* --- team -------------------------- */
 .team {
@@ -182,6 +233,17 @@ a {
 .team-title {
   margin-bottom: 50px;
 }
+.team-list {
+  display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  flex-wrap: wrap;
+}
+.team-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
 .team-item-size {
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -191,6 +253,8 @@ a {
 .team-item-title {
   font-weight: 500;
   color: var(--title-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-item-text {
   /* color: var(--prim-text-color); */
