@@ -6,8 +6,9 @@
   --light-backg-color: #f5f4fa;
   --dark-backg-color: #2f303a;
 }
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--prim-text-color);
   background-color: var(--prim-backg-color);
 }
