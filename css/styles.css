@@ -210,10 +210,13 @@ a {
   color: var(--accent-color);
 }
 /* --- portfolio-page ---------------- */
-.portfolio-page {
+.portfolio {
   background-color: var(--prim-backg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.portfolio-item {
+.portfolio-list-container {
+  margin-bottom: 34px;
 }
 .portfolio-btn {
   font-family: inherit;
@@ -226,6 +229,8 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  border-color: transparent;
+  border-radius: 4px;
   background-color: var(--light-backg-color);
 }
 .portfolio-btn:hover {
