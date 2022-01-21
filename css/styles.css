@@ -45,7 +45,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 .visually-hidden {
   position: absolute;
@@ -78,6 +78,7 @@ a {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border: 1px solid #ececec;
 }
 .header-container {
   display: flex;
