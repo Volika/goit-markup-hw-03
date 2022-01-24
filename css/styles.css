@@ -30,6 +30,7 @@ button {
   cursor: pointer;
 }
 img {
+  height: auto;
   display: block;
   max-width: 100%;
 }
@@ -78,7 +79,7 @@ a {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -189,10 +190,6 @@ a {
   background-color: #188ce8;
 }
 /* --- advantage ----------- */
-.advantage {
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
-}
 .advantage-list {
   display: flex;
   justify-content: space-between;
@@ -216,6 +213,7 @@ a {
 }
 /* --- development ------------------------- */
 .development {
+  padding-top: 0;
   padding-bottom: 94px;
 }
 .development-list {
@@ -248,14 +246,13 @@ a {
   width: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-}
-.team-card {
-  width: 270px;
-  height: 368px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-card {
+  padding: 30px 0;
 }
 .team-item-size {
   font-size: 16px;
@@ -266,7 +263,7 @@ a {
 .team-item-title {
   font-weight: 500;
   color: var(--title-text-color);
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 10px;
 }
 .team-item-text {
@@ -280,11 +277,15 @@ a {
 .footer-address {
   margin-top: 20px;
 }
+.footer-address-list {
+}
 .footer-address-item {
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+}
+.footer-address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-link-address {
@@ -300,15 +301,9 @@ a {
   color: var(--accent-color);
 }
 /* --- portfolio-page ---------------- */
-.portfolio {
-  background-color: var(--prim-backg-color);
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
-}
-.portfolio-list-container {
-  margin-bottom: 34px;
-}
+
 .portfolio-list {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -316,6 +311,7 @@ a {
   margin-left: 8px;
 }
 .portfolio-btn {
+  padding: 6px 22px;
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;
@@ -347,15 +343,16 @@ a {
   margin-bottom: 30px;
 }
 .project-card {
+}
+.project-card-footer {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-}
-.project-card-footer {
   padding: 20px 24px;
 }
 
 .project-item-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
